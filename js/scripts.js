@@ -60,3 +60,10 @@ var dayValid = dayValidator();
 
 //Days of the week
 var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+//Generating index value
+if (dayOfWeek == 0) {
+    var index = 6;
+} else {
+    index = dayOfWeek - 1;
+};
