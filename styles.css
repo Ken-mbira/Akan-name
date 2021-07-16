@@ -42,3 +42,8 @@
     width: 400px;
     height: 100px;
 }
+
+.formbuttons {
+    background-color: transparent;
+    color: white;
+}
