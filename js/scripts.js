@@ -47,3 +47,8 @@ var dayValidator = () => {
         }
     }
 }
+
+//Function to determine day of birth
+
+let dayOfWeek = Math.round((((Number(year.slice(0, 2)) / 4) - 2 * Number(year.slice(0, 2)) - 1) +
+    ((5 * Number(year.slice(2, 4)) / 4)) + ((26 * (month + 1) / 10)) + day) % 7);
