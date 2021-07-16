@@ -17,6 +17,17 @@ var month = document.getElementById("month").value;
 var day = document.getElementById("day").value;
 var gender = document.getElementByName("gender").value;
 
+//gender generator
+function genderChecker() {
+    for (let gender of gender) {
+        if (gender.checked) {
+            return gender.value
+        }
+    }
+}
+let genderValue = genderChecker();
+console.log(genderValue);
+
 //Month validator
 var monthValidator = () => {
     if (document)
