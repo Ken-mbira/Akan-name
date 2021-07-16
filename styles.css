@@ -8,5 +8,18 @@
     height: 623px;
 }
 
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
+    font-size: 50px;
+}
+
+.button {
+    position: absolute;
+    background-color: transparent;
+    left: 600px;
+    top: 450px;
+}
+
 
 /* Page 2 content*/
