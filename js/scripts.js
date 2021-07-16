@@ -5,23 +5,7 @@ function show(show, hidden) {
 }
 
 
-//Male names if function
-var gender = getElementByName("gender")
-alert(gender)
-
-var Sunday = Kwasi
-var Monday = Kwadwo
-var Tuesday = Kwabena
-var Wednesday = Kwaku
-var Thursday = Yaw
-var Friday = Kofi
-var Saturday = Kwame
-
-//Female names
-var Sunday = Akosua
-var Monday = Adwoa
-var Tuesday = Abenaa
-var Wednesday = Akua
-var Thursday = Yaa
-var Friday = Afua
-var Saturday = Ama
+//Male names
+var maleAkanNames = [Kwasi, Kwadwo, Kwabena, Kwaku, Yaw, Kofi, Kwame]
+    //Female names
+var femaleAkanNames = [Akosua, Adwoa, Abenaa, Akua, Yaa, Afua, Ama]
