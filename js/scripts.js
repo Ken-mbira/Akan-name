@@ -7,7 +7,8 @@ function show(show, hidden) {
 
 //Male names
 var maleAkanNames = [Kwasi, Kwadwo, Kwabena, Kwaku, Yaw, Kofi, Kwame]
-    //Female names
+
+//Female names
 var femaleAkanNames = [Akosua, Adwoa, Abenaa, Akua, Yaa, Afua, Ama]
 
 
@@ -56,3 +57,6 @@ let dayOfWeek = Math.round((((Number(year.slice(0, 2)) / 4) - 2 * Number(year.sl
 //validation variables
 var monthValid = monthValidator();
 var dayValid = dayValidator();
+
+//Days of the week
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
