@@ -59,7 +59,7 @@ var monthValid = monthValidator();
 var dayValid = dayValidator();
 
 //Days of the week
-var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 //Generating index value
 if (dayOfWeek == 0) {
@@ -67,3 +67,13 @@ if (dayOfWeek == 0) {
 } else {
     index = dayOfWeek - 1;
 };
+console.log(index);
+
+//Name assigning function
+if (genderValue == "male" && monthValid && dayValid) {
+    document.getElementById("heading1").innerHTML = "Hello " + maleAkanNames[index] + ".You were born on " + weekDays[index]
+} else if (genderValue == "female" && monthValid && dayValid) {
+    document.getElementById("heading1").innerHTML = "Hello " + femaleAkanNames[index] + " .You were born on " + weekDays[index]
+} else {
+    alert("Sorry, but it seems you have input invalid data, please check on the day, month or year section.")
+}
