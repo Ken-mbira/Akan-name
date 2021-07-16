@@ -36,3 +36,14 @@ var monthValidator = () => {
         return true;
     }
 }
+
+//Day validator
+var dayValidator = () => {
+    if (year % 4 === 0) {
+        if (month === 2 && (day > 29 || day < 1)) { return false } else { return true }
+    } else {
+        if (day > 31 || day < 1) {
+            return false;
+        }
+    }
+}
