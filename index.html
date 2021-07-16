@@ -19,7 +19,7 @@
             <p> The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born.<br> These names usally differed based on gender where the name for a certain day foy a boy-child was different
                 from that of a girl-child.<br> Most Ghanaians have at least one name from this system followed by their christian names, You can have this too.</p>
         </div>
-        <button href="#" onclick="return show('Page2','Page1');" class="button">Know your Akan</button>
+        <button href="#" onclick="return show('Page2','Page1');" class="button" id="knowakan">Know your Akan</button>
     </div>
 
     <!--Page 2 content-->
@@ -88,10 +88,10 @@
             <!--Buttons-->
             <div class="row formitems">
                 <div class="col-md-6">
-                    <button href="#" value="Cancel" id="cancel" class="formbuttons">Cancel</button>
+                    <button href="#" value="Cancel" id="cancel" class="formbuttons" onclick="reset()">Cancel</button>
                 </div>
                 <div class="col-md-6">
-                    <button href="#" value="cancel" id="submit" class="formbuttons" onclick="run(); return show('Page1','Page2')">Submit</button>
+                    <button href="#" value="cancel" id="submit" class="formbuttons" onclick="run()">Submit</button>
                 </div>
             </div>
 
