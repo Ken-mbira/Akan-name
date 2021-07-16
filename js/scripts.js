@@ -3,24 +3,25 @@ function show(show, hidden) {
     document.getElementById(hidden).style.display = 'none';
     return false;
 }
-//define init function
-const init = function() {
-    document.getElementById("cancel").addEventListener("click", reset);
-    document.getElementById("submit", send);
-}
-
-//define reset function
-const reset = function(ev) {
-    ev.preventDefault();
-    document.getElementById("form-user").reset();
-}
 
 
+//Male names if function
+var gender = getElementByName("gender")
+alert(gender)
 
+var Sunday = Kwasi
+var Monday = Kwadwo
+var Tuesday = Kwabena
+var Wednesday = Kwaku
+var Thursday = Yaw
+var Friday = Kofi
+var Saturday = Kwame
 
-
-
-
-
-//event listener initialize
-document.addEventListener("DOMContentLoaded", init);
+//Female names
+var Sunday = Akosua
+var Monday = Adwoa
+var Tuesday = Abenaa
+var Wednesday = Akua
+var Thursday = Yaa
+var Friday = Afua
+var Saturday = Ama

@@ -28,7 +28,7 @@
     background-image: url(images/image2.jpg);
     background-position: center;
     background-size: cover;
-    height: 623px;
+    height: 650px;
 }
 
 #button2 {
@@ -46,8 +46,4 @@
 .formbuttons {
     background-color: transparent;
     color: white;
-}
-
-.formitems {
-    padding-top: 8px;
 }
