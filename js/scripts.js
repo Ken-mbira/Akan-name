@@ -30,5 +30,9 @@ console.log(genderValue);
 
 //Month validator
 var monthValidator = () => {
-    if (document)
+    if (month < 1 || month > 12) {
+        return false;
+    } else {
+        return true;
+    }
 }
