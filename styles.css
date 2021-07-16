@@ -28,13 +28,13 @@
     background-image: url(images/image2.jpg);
     background-position: center;
     background-size: cover;
-    height: 650px;
+    height: 800px;
 }
 
 #button2 {
     color: white;
     position: absolute;
-    top: 570px;
+    top: 750px;
     left: 1000px
 }
 
