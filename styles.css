@@ -23,3 +23,10 @@
 
 
 /* Page 2 content*/
+
+#Page2 {
+    background-image: url(images/image2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 623px;
+}
