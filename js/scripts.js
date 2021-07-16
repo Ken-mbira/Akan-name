@@ -70,10 +70,12 @@ if (dayOfWeek == 0) {
 console.log(index);
 
 //Name assigning function
-if (genderValue == "male" && monthValid && dayValid) {
-    document.getElementById("heading1").innerHTML = "Hello " + maleAkanNames[index] + ".You were born on " + weekDays[index]
-} else if (genderValue == "female" && monthValid && dayValid) {
-    document.getElementById("heading1").innerHTML = "Hello " + femaleAkanNames[index] + " .You were born on " + weekDays[index]
-} else {
-    alert("Sorry, but it seems you have input invalid data, please check on the day, month or year section.")
+var run = () => {
+    if (genderValue == "male" && monthValid && dayValid) {
+        document.getElementById("heading1").innerHTML = "Hello " + maleAkanNames[index] + ".You were born on " + weekDays[index]
+    } else if (genderValue == "female" && monthValid && dayValid) {
+        document.getElementById("heading1").innerHTML = "Hello " + femaleAkanNames[index] + " .You were born on " + weekDays[index]
+    } else {
+        alert("Sorry, but it seems you have input invalid data, please check on the day, month or year section.")
+    }
 }
