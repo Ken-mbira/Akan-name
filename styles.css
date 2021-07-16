@@ -30,3 +30,10 @@
     background-size: cover;
     height: 623px;
 }
+
+#button2 {
+    color: white;
+    position: absolute;
+    top: 570px;
+    left: 1000px
+}
