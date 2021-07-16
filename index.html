@@ -11,22 +11,36 @@
 </head>
 
 <body>
+    <!--Page 1 content-->
     <div id="Page1" class="page1">
         <div class="jumbotron"><u>Akan Name.</u></div>
         <!--Paragraph-->
         <div class="container">
             <p> The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born.<br> These names usally differed based on gender where the name for a certain day foy a boy-child was different
-                from that of a girl child.<br> Most Ghanaians have at least one name from this system followed by their christian names, You can achieve this too.</p>
+                from that of a girl child.<br> Most Ghanaians have at least one name from this system followed by their christian names, You can have this too.</p>
         </div>
         <button href="#" onclick="return show('Page2','Page1');" class="button">Know your Akan</button>
     </div>
 
-
-
-
-
+    <!--Page 2 content-->
     <div id="Page2" style="display:none" class="page2">
-        <button href="#" onclick="return show('Page1','Page2');">Back to home page</button>
+        <form class="container">
+            <h1>Fill out the following form to initialise the process: </h1>
+            <!--Names-->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="firstname">First Name</label><br>
+                    <input type="text" id="firstname" autofocus placeholder="First Name" name="firstname">
+                </div>
+                <div class="col-md-6">
+                    <label for="secondname">Second Name</label><br>
+                    <input type="text" id="secondname" placeholder="Second Name" name="firstname"><br>
+                </div>
+            </div>
+
+        </form>
+
+        <button href="#" onclick="return show('Page1','Page2');" class="button" id="button2">Back to home page</button>
     </div>
     <script src="js/scripts.js"></script>
 </body>
