@@ -3,3 +3,18 @@ function show(show, hidden) {
     document.getElementById(hidden).style.display = 'none';
     return false;
 }
+//define init function
+const init = function() {
+    document.getElementById("cancel").addEventListener("click", reset);
+    document.getElementById("submit", send);
+}
+
+
+
+
+
+
+
+
+//event listener initialize
+document.addEventListener("DOMContentLoaded", init);
