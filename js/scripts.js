@@ -9,6 +9,12 @@ const init = function() {
     document.getElementById("submit", send);
 }
 
+//define reset function
+const reset = function(ev) {
+    ev.preventDefault();
+    document.getElementById("form-user").reset();
+}
+
 
 
 
