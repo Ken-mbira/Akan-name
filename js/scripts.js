@@ -79,3 +79,20 @@ var run = () => {
         alert("Sorry, but it seems you have input invalid data, please check on the day, month or year section.")
     }
 }
+
+//
+const init = function() {
+    document.getElementById("cancel").addEventListener("click", reset());
+    document.getElementById("submit").addEventListener("click", send());
+}
+
+const reset = function(ev) {
+    ev.preventDefault()
+    document.getElementById("form-user").reset();
+
+}
+
+const send = function(ev) {
+    ev.preventDefault();
+    run();
+}
