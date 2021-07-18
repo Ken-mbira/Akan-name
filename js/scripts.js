@@ -38,9 +38,16 @@ var dateValidator = () => {
 
 //day validator
 var dayValidator = () => {
-    if (year % 4 === 0 && month === 2 && day > 29 || day < 1) {
+    if (day < 1) {
+        alert("Please enter a number of days greater than 1!")
+    } else if (year % 4 === 0 && month === 2 && day > 29) {
         alert("Please enter valid days for February in a leap year!")
-    } else if (month === 2 && day > 28 || day < 1) {
+    } else if (month === 2 && day > 28) {
         alert("Please enter valid days for February in a non-leap year!")
+    } else if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12 && day > 31) {
+        alert("Please enter a valid day response!")
+    } else if (month === 4 || month === 6 || month === 9 || month === 11 && day > 30) {
+        alert("Please enter a valid response!")
     }
+
 }
