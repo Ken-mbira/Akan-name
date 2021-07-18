@@ -4,19 +4,13 @@ function show(show, hidden) {
     return false;
 }
 
-//Variable assign function
-var assignValues = () => {
-    var day = document.getElementById("day").value;
-    var month = document.getElementById("month").value;
-    var year = document.getElementById("year").value;
-}
-
 //Gender checker
 var genderChecker = () => {
     if (document.getElementById("male").checked) {
         var gender = male;
     } else if (document.getElementById("female").checked) {
         var gender = female;
+        alert(gender)
     }
 }
 
@@ -79,9 +73,9 @@ var indexFinder = () => {
 
 var finalFunction = () => {
     if (gender = male) {
-        document.getElementById("jumbotron").textContent = "Hello, " + maleNames[index];
+        alert(Hello)
     } else if (gender = female) {
-        document.getElementById("jumbotron").textContent = "Hello, " + femaleNames[index];
+        alert(oyaa)
     }
 }
 
