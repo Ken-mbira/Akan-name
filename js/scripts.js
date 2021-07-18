@@ -65,3 +65,12 @@ var arrayFinder = () => {
     var femaleNames = ["AKosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 }
+
+//index
+var indexFinder = () => {
+    if (dayNumber === 0) {
+        var index = 6;
+    } else {
+        var index = dayNumber - 1;
+    }
+}
