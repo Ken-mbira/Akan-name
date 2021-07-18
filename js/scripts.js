@@ -74,3 +74,25 @@ var indexFinder = () => {
         var index = dayNumber - 1;
     }
 }
+
+//final function
+
+var finalFunction = () => {
+    if (gender = male) {
+        document.getElementById("jumbotron").textContent = "Hello, " + maleNames[index];
+    } else if (gender = female) {
+        document.getElementById("jumbotron").textContent = "Hello, " + femaleNames[index];
+    }
+}
+
+var masterFunction = () => {
+    assignValues();
+    genderChecker();
+    dateValidator();
+    dayValidator();
+    dayFinder();
+    arrayFinder();
+    indexFinder();
+    finalFunction();
+
+}
