@@ -28,3 +28,10 @@ var monthValidator = () => {
         alert("Please enter a valid month number!")
     }
 }
+
+//year validator
+var yearValidator = () => {
+    if (year >= 2021 && month >= 7 && day > 18) {
+        alert("Please enter a valid date! Prior than today's date.")
+    }
+}
