@@ -29,9 +29,18 @@ var monthValidator = () => {
     }
 }
 
-//year validator
-var yearValidator = () => {
+//date validator
+var dateValidator = () => {
     if (year >= 2021 && month >= 7 && day > 18) {
         alert("Please enter a valid date! Prior than today's date.")
+    }
+}
+
+//day validator
+var dayValidator = () => {
+    if (year % 4 === 0 && month === 2 && day > 29 || day < 1) {
+        alert("Please enter valid days for February in a leap year!")
+    } else if (month === 2 && day > 28 || day < 1) {
+        alert("Please enter valid days for February in a non-leap year!")
     }
 }
