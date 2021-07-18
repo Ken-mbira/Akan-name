@@ -51,3 +51,10 @@ var dayValidator = () => {
     }
 
 }
+
+//Formula to determine day of birth
+var dayFinder = () => {
+    var centuryDigits = parseInt(year.toString.slice(0, 2));
+    var yearDigits = parseInt(year.toString.slice(2, 4));
+    var dayNumber = (((centuryDigits / 4) - 2 * centuryDigits - 1) + ((5 * yearDigits / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
+}
