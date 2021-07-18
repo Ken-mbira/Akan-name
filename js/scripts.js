@@ -19,3 +19,12 @@ var genderChecker = () => {
         var gender = female;
     }
 }
+
+//Validation functions
+
+//month validator
+var monthValidator = () => {
+    if (month > 12 || month < 1) {
+        alert("Please enter a valid month number!")
+    }
+}
