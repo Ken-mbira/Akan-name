@@ -23,11 +23,13 @@ E-mail: mbiraken17@gmail.com
 Slack: @Ken Mbira
 
 ## Setup Instructions
-To have the web application for yourself, follow the following steps:
-1. Create a folder using Terminal on your computer and initialize git by using the command "git init"
-2. Then use the term 'git clone' followed by the link found in this repository.
+To have the repository in your local machine, follow the following steps:
+1. From your repository page on git-hub, click on clone and then copy the URL provided to your repository.
+2. Next on your machine navigate on terminal to the location you want to save the repository at.
+3. Here, you can use the command 'git clone' followed by pasting the URL and hit enter.
+4. Now the data will exist on your computer, you can ascertain this by typing 'ls' on the file location and then you will view the contents.
 
-Use of the downloaded files will be entirely up to you but I implore you to only use it as a guide or reference but not plaigarise it completely.
+
 
 
 ## Licence Information
