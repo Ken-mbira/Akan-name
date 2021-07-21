@@ -18,9 +18,9 @@ and uses this information to deduce the user's Akan name.
 
 ## Contact Information
 You can contact me through:
-Phone: 0758926990
-E-mail: mbiraken17@gmail.com
-Slack: @Ken Mbira
+1. Phone: 0758926990
+2. E-mail: mbiraken17@gmail.com
+3. Slack: @Ken Mbira
 
 ## Setup Instructions
 To have the repository in your local machine, follow the following steps:
