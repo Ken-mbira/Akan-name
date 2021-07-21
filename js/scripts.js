@@ -47,7 +47,7 @@ var masterFunction = () => {
     if (dayNumber === 0) {
         var index = 6;
     } else {
-        var index = dayNumber;
+        var index = dayNumber - 1;
     }
 
 
