@@ -64,9 +64,9 @@ var masterFunction = () => {
 
         //Final function
         if (gender === "male") {
-            document.getElementById("jumbotron").innerHTML = "Hello " + maleNames[index] + ". You were born on a " + dayNames[index] + ".";
+            alert("Hello " + maleNames[index] + ". You were born on a " + dayNames[index] + ".");
         } else if (gender === "female") {
-            document.getElementsById("jumbotron").innerHTML = "Hello " + femaleNames[index] + ". You were born on a " + dayNames[index] + ".";
+            alert("Hello " + femaleNames[index] + ". You were born on a " + dayNames[index] + ".");
         }
 
     }
