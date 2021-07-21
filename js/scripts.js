@@ -13,14 +13,6 @@ var masterFunction = () => {
     var year = document.getElementById("year").value;
 
 
-    // get gender
-    if (document.getElementById("male").checked) {
-        var gender = "male";
-    } else if (document.getElementById("female").checked) {
-        var gender = "female";
-    }
-
-
     //date validators
     if (month > 12 || month < 1) {
         alert("Please enter a valid month number!")
@@ -30,7 +22,7 @@ var masterFunction = () => {
         alert("Please enter a number of days greater than 1!")
     } else if (year % 4 === 0 && month === 2 && day > 29) {
         alert("Please enter valid days for February in a leap year!")
-    } else if (year % 4 !==0 && month === 2 && day > 28) {
+    } else if (year % 4 !== 0 && month === 2 && day > 28) {
         alert("Please enter valid days for February in a non-leap year!")
     } else if ((month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) && day > 31) {
         alert("Please enter a valid day response!")
@@ -58,12 +50,28 @@ var masterFunction = () => {
         var index = dayNumber;
     }
 
-    //Final function
-    if (gender == "male") {
-        document.getElementById("jumbotron").innerHTML = "Hello " + maleNames[index] + ". You were born on a " + dayNames[index] + ".";
-    } else if (gender == "female") {
-        document.getElementsById("jumbotron").innerHTML = "Hello " + femaleNames[index] + ". You were born on a " + dayNames[index] + ".";
+
+
+    // get gender
+    var getGender = () => {
+
+        if (document.getElementById("male").checked) {
+            gender = "male";
+        } else if (document.getElementById("female").checked) {
+            gender = "female";
+        }
+        var gender = gender;
+
+        //Final function
+        if (gender === "male") {
+            document.getElementById("jumbotron").innerHTML = "Hello " + maleNames[index] + ". You were born on a " + dayNames[index] + ".";
+        } else if (gender === "female") {
+            document.getElementsById("jumbotron").innerHTML = "Hello " + femaleNames[index] + ". You were born on a " + dayNames[index] + ".";
+        }
+
     }
+    getGender();
+
 
 
 }
