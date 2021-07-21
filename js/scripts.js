@@ -8,9 +8,9 @@ function show(show, hidden) {
 //Master function
 var masterFunction = () => {
     // assign values
-    var day = document.getElementById("day").value;
-    var month = document.getElementById("month").value;
-    var year = document.getElementById("year").value;
+    var day = parseInt(document.getElementById("day").value);
+    var month = parseInt(document.getElementById("month").value);
+    var year = parseInt(document.getElementById("year").value);
 
 
     //date validators
@@ -28,49 +28,50 @@ var masterFunction = () => {
         alert("Please enter a valid day response!")
     } else if ((month === 4 || month === 6 || month === 9 || month === 11) && day > 30) {
         alert("Please enter a valid response!")
-    }
-
-
-    //Day of week calculator
-    var CC = parseInt(year.toString().slice(0, 2));
-    var YY = parseInt(year.toString().slice(2, 4));
-    var MM = parseInt(month);
-    var DD = parseInt(day);
-    var dayNumber = Math.round((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7);
-
-    //Arrays
-    var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var femaleNames = ["AKosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-    //index geneator
-    if (dayNumber === 0) {
-        var index = 6;
     } else {
-        var index = dayNumber - 1;
-    }
 
 
+        //Day of week calculator
+        var CC = parseInt(year.toString().slice(0, 2));
+        var YY = parseInt(year.toString().slice(2, 4));
+        var MM = parseInt(month);
+        var DD = parseInt(day);
+        var dayNumber = Math.round((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7);
 
-    // get gender
-    var getGender = () => {
+        //Arrays
+        var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+        var femaleNames = ["AKosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+        var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-        if (document.getElementById("male").checked) {
-            gender = "male";
-        } else if (document.getElementById("female").checked) {
-            gender = "female";
+        //index geneator
+        if (dayNumber === 0) {
+            var index = 6;
+        } else {
+            var index = dayNumber - 1;
         }
-        var gender = gender;
 
-        //Final function
-        if (gender === "male") {
-            document.getElementById("heading1").innerHTML = "Hello " + maleNames[index] + ". You were born on a " + dayNames[index] + ".";
-        } else if (gender === "female") {
-            document.getElementById("heading1").innerHTML = "Hello " + femaleNames[index] + ". You were born on a " + dayNames[index] + ".";
+
+
+        // get gender
+        var getGender = () => {
+
+            if (document.getElementById("male").checked) {
+                gender = "male";
+            } else if (document.getElementById("female").checked) {
+                gender = "female";
+            }
+            var gender = gender;
+
+            //Final function
+            if (gender === "male") {
+                document.getElementById("heading1").innerHTML = "Hello " + maleNames[index] + " " + document.getElementById("secondname").value + ". You were born on a " + dayNames[index] + ".";
+            } else if (gender === "female") {
+                document.getElementById("heading1").innerHTML = "Hello " + femaleNames[index] + " " + document.getElementById("secondname").value + ". You were born on a " + dayNames[index] + ".";
+            }
+
         }
-
+        getGender();
     }
-    getGender();
 
 
 
