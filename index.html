@@ -25,7 +25,7 @@
     <!--Page 2 content-->
     <div id="Page2" style="display:none" class="page2">
         <form class="container" id="form-user">
-            <h1 id="heading1">Fill out the following form to initialise the process: </h1>
+            <h1 id="heading1">You will view your results here after you click submit </h1>
             <!--Names-->
             <div class="row formitems">
                 <div class="col-md-6">
@@ -64,13 +64,7 @@
 
                 </div>
             </div>
-            <!--Nation of origin-->
-            <div class="row formitems">
-                <div class="col-md-12">
-                    <label for="country">Enter your country of origin:</label><br>
-                    <input type="text" id="country" name="country" placeholder="country name goes here">
-                </div>
-            </div>
+
             <!--email section-->
             <div class="row formitems">
                 <div class="col-md-12">
@@ -78,20 +72,14 @@
                     <input type="email" id="email" name="email" placeholder="name@gmail.com">
                 </div>
             </div>
-            <!--more about yourself-->
-            <div class="row formitems">
-                <div class="col-md-12">
-                    <label for="details">You may add a bit about yourself below</label><br>
-                    <input type="text-area" novalidate id="details" placeholder="tell us a bit about yourself">
-                </div>
-            </div>
+
             <!--Buttons-->
             <div class="row formitems">
                 <div class="col-md-6">
-                    <input type="reset" value="cancel">
+                    <input type="button" value="cancel" onclick="reset()">
                 </div>
                 <div class="col-md-6">
-                    <input type="submit" value="submit" onclick=" masterFunction();">
+                    <input type="button" value="submit" onclick=" masterFunction();">
                 </div>
             </div>
 
