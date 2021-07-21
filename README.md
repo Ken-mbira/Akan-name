@@ -29,9 +29,6 @@ To have the web application for yourself, follow the following steps:
 
 Use of the downloaded files will be entirely up to you but I implore you to only use it as a guide or reference but not plaigarise it completely.
 
-## Known Bugs
-1. The application is currently under construction and is not yet fully functional in that it will not give back your akan name but will take you back to the landing page. I am currently working on this bug and will soon sort it out.
-
 
 ## Licence Information
 MIT License
