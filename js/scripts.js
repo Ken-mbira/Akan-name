@@ -64,9 +64,9 @@ var masterFunction = () => {
 
         //Final function
         if (gender === "male") {
-            alert("Hello " + maleNames[index] + ". You were born on a " + dayNames[index] + ".");
+            document.getElementById("heading1").innerHTML = "Hello " + maleNames[index] + ". You were born on a " + dayNames[index] + ".";
         } else if (gender === "female") {
-            alert("Hello " + femaleNames[index] + ". You were born on a " + dayNames[index] + ".");
+            document.getElementById("heading1").innerHTML = "Hello " + femaleNames[index] + ". You were born on a " + dayNames[index] + ".";
         }
 
     }
