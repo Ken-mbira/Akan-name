@@ -74,3 +74,8 @@
 #heading1 {
     text-align: center;
 }
+
+.buttons {
+    background-color: black;
+    color: white
+}
