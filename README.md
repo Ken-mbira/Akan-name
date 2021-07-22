@@ -29,8 +29,9 @@ To have the repository in your local machine, follow the following steps:
 3. Here, you can use the command 'git clone' followed by pasting the URL and hit enter.
 4. Now the data will exist on your computer, you can ascertain this by typing 'ls' on the file location and then you will view the contents.
 
-
-
+## Project link
+Follow this link to view the website's live page:
+https://ken-mbira.github.io/Akan-name/
 
 ## Licence Information
 MIT License
