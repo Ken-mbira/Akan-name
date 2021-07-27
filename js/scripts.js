@@ -44,11 +44,15 @@ var masterFunction = () => {
         var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
         //index geneator
+        var index;
         if (dayNumber === 0) {
             var index = 6;
+        } else if (dayNumber < 0) {
+            var index = dayNumber + 7;
         } else {
             var index = dayNumber - 1;
         }
+
 
 
 
